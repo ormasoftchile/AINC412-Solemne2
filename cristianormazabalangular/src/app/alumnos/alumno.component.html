@@ -1,0 +1,11 @@
+<div class="card alumno" style="width: 18rem;">
+  <img [src]="alumno.miniatura" class="img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{alumno.nombre | uppercase}}</h5>
+    <p class="card-text descripcion">{{alumno.descripcion}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Año: {{alumno.anoingreso}}</li>
+    <li class="list-group-item">Fecha nac: {{alumno.fechanacimiento | date:'shortDate'}}</li>
+  </ul>
+</div>

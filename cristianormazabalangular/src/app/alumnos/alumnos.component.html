@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4">
+    <div class="col g-4" *ngFor="let alumno of alumnos | async">
+      <co-alumno [alumno]="alumno"></co-alumno>
+    </div>
+  </div>
+</div>
